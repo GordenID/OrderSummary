@@ -1,0 +1,51 @@
+:root {
+    /*Primary Colors*/
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+
+    /*Neutral */
+    --veryPaleBlue:hsl(225, 100%, 98%) ; 
+    --desaturedBlue: hsl(224, 23%, 55%); 
+    --darkBlue: hsl(223, 47%, 23%);
+
+    /*Font-Weights*/
+    --thin-weight: 500; 
+    --medium-weight: 700; 
+    --bold-weight: 900; 
+
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--paleBlue);
+    font-family: 'Red Hat Display', sans-serif;
+    position: relative;
+}
+
+#bord {
+    width: 450px;
+    height: 695px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    border-radius: 5%;
+    
+}
+#cover { 
+    width: 450px;
+    height: calc((1/3) * 695px);
+    background-color: var(--brightBlue);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+  #bord  {
+    text-align: center;
+}
+
+
+.text {
+    color: var(--desaturedBlue);
+}

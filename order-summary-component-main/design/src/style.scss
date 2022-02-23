@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/*primary colors */
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+
+$veryPaleBlue: hsl(225, 100%, 98%);
+$esaturedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+.ticket-wrapper {
+  background-color: $paleBlue;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  text-align: center;
+
+  .ticket {
+    background-color: white;
+
+    .cover {
+     
+      img {
+        max-width: 320px;
+      }
+    }
+    .content {
+    
+      
+
+      .content-label {
+        
+        display: flex;
+        justify-content: space-between;
+        background-color: $veryPaleBlue;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 1rem;
+
+        .label-item {
+         
+          display: flex;
+          
+
+          a {
+            margin-top: 0.5rem;
+          }
+
+          .label-item-in {
+           
+            margin-right: 0.7rem;
+          }
+        }
+      }
+       .btn {
+           background-color: $brightBlue;
+           width: 80%;
+           margin: 1rem auto; 
+           border-radius: 10%;
+           border: solid $brightBlue;
+    
+        
+           button {
+            background-color: $brightBlue;
+            text-decoration: none;
+            border: none; 
+            color: white;
+            padding: .5rem 1rem; 
+           }
+           
+           
+       }
+    }
+  }
+}

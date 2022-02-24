@@ -10,72 +10,110 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
 }
 
-.ticket-wrapper {
-  background-color: #e0e8ff;
+.wrapper--card {
   height: 100%;
+  background-color: #e0e8ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.ticket-wrapper .ticket {
-  background-color: white;
-}
-
-.ticket-wrapper .ticket .cover img {
-  max-width: 320px;
-}
-
-.ticket-wrapper .ticket .content .content-label {
+.wrapper--card .card {
+  max-width: 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px;
+}
+
+.wrapper--card .card__cover img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.wrapper--card .card__content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper--card .card__content__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f5f7ff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+  border-radius: 10px;
+}
+
+.wrapper--card .card__content__label__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper--card .card__content__label__wrapper img {
+  margin-right: 1rem;
+}
+
+.wrapper--card .card__content__label__wrapper__start {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f5f7ff;
-  width: 80%;
-  margin: 0 auto;
-  padding: 0 1rem;
 }
 
-.ticket-wrapper .ticket .content .content-label .label-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.wrapper--card .card__content__label__wrapper__start__head {
+  margin-bottom: .3rem;
+  font-weight: 700;
 }
 
-.ticket-wrapper .ticket .content .content-label .label-item a {
-  margin-top: 0.5rem;
-}
-
-.ticket-wrapper .ticket .content .content-label .label-item .label-item-in {
-  margin-right: 0.7rem;
-}
-
-.ticket-wrapper .ticket .content .btn {
+.wrapper--card .card__content__btn {
   background-color: #3829e0;
-  width: 80%;
-  margin: 1rem auto;
-  border-radius: 10%;
-  border: solid #3829e0;
+  padding: .8rem 0;
+  margin-top: 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0.5rem 0.6rem 0.6rem #e0e8ff;
+          box-shadow: 0.5rem 0.6rem 0.6rem #e0e8ff;
 }
 
-.ticket-wrapper .ticket .content .btn button {
+.wrapper--card .card__content__btn button {
   background-color: #3829e0;
-  text-decoration: none;
+  color: #fff;
   border: none;
-  color: white;
-  padding: .5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.wrapper--card .card__content .endtext {
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+.txt {
+  color: #7280a7;
 }
 /*# sourceMappingURL=style.css.map */
